@@ -1,0 +1,18 @@
+D:\Tien Nguyen\Project\TNEnglish\Update Word\bin\Debug\Update Word.exe.config
+D:\Tien Nguyen\Project\TNEnglish\Update Word\bin\Debug\Update Word.exe
+D:\Tien Nguyen\Project\TNEnglish\Update Word\bin\Debug\Update Word.pdb
+D:\Tien Nguyen\Project\TNEnglish\Update Word\bin\Debug\TN.Data.dll
+D:\Tien Nguyen\Project\TNEnglish\Update Word\bin\Debug\EntityFramework.dll
+D:\Tien Nguyen\Project\TNEnglish\Update Word\bin\Debug\TN.Data.pdb
+D:\Tien Nguyen\Project\TNEnglish\Update Word\bin\Debug\EntityFramework.xml
+D:\Tien Nguyen\Project\TNEnglish\Update Word\bin\Debug\Interop.WMPLib.dll
+D:\Tien Nguyen\Project\TNEnglish\Update Word\bin\Debug\AxInterop.WMPLib.dll
+D:\Tien Nguyen\Project\TNEnglish\Update Word\obj\Debug\Update Word.csprojResolveAssemblyReference.cache
+D:\Tien Nguyen\Project\TNEnglish\Update Word\obj\Debug\Interop.WMPLib.dll
+D:\Tien Nguyen\Project\TNEnglish\Update Word\obj\Debug\AxInterop.WMPLib.dll
+D:\Tien Nguyen\Project\TNEnglish\Update Word\obj\Debug\Update Word.csproj.ResolveComReference.cache
+D:\Tien Nguyen\Project\TNEnglish\Update Word\obj\Debug\Update_Word.Form1.resources
+D:\Tien Nguyen\Project\TNEnglish\Update Word\obj\Debug\Update_Word.Properties.Resources.resources
+D:\Tien Nguyen\Project\TNEnglish\Update Word\obj\Debug\Update Word.csproj.GenerateResource.Cache
+D:\Tien Nguyen\Project\TNEnglish\Update Word\obj\Debug\Update Word.exe
+D:\Tien Nguyen\Project\TNEnglish\Update Word\obj\Debug\Update Word.pdb

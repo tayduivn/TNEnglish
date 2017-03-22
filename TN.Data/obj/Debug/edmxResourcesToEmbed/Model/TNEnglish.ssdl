@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="EnglishModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Account">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FullName" Type="nvarchar" MaxLength="100" />
+    <Property Name="Email" Type="nvarchar" MaxLength="200" />
+    <Property Name="Phone" Type="varchar" MaxLength="11" />
+    <Property Name="Username" Type="varchar" MaxLength="50" />
+    <Property Name="Password" Type="nvarchar" MaxLength="50" />
+    <Property Name="Mark" Type="int" />
+    <Property Name="Status" Type="bit" />
+  </EntityType>
+  <EntityType Name="HistoryDay">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdAccount" Type="int" />
+    <Property Name="Day" Type="datetime" />
+    <Property Name="Status" Type="bit" />
+  </EntityType>
+  <EntityType Name="HistoryWord">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdWord" Type="int" />
+    <Property Name="IdAccount" Type="int" />
+    <Property Name="Day" Type="datetime" />
+    <Property Name="Time" Type="int" />
+    <Property Name="Status" Type="bit" />
+  </EntityType>
+  <EntityType Name="Word">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="Word" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Word" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="WordRemember" Type="varchar" MaxLength="150" />
+    <Property Name="Mean" Type="nvarchar" MaxLength="200" />
+    <Property Name="Audio" Type="nvarchar" MaxLength="50" />
+    <Property Name="Image" Type="nvarchar" MaxLength="50" />
+    <Property Name="Category" Type="varchar" MaxLength="10" />
+    <Property Name="Status" Type="bit" />
+  </EntityType>
+  <EntityType Name="WordEffect">
+    <Key>
+      <PropertyRef Name="IdAccountUser" />
+      <PropertyRef Name="IdWord" />
+    </Key>
+    <Property Name="IdAccountUser" Type="int" Nullable="false" />
+    <Property Name="IdWord" Type="int" Nullable="false" />
+    <Property Name="Point" Type="int" />
+    <Property Name="Review" Type="int" />
+    <Property Name="Status" Type="bit" />
+  </EntityType>
+  <Function Name="learnNew" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id" Type="int" Mode="In" />
+  </Function>
+  <EntityContainer Name="EnglishModelStoreContainer">
+    <EntitySet Name="Account" EntityType="Self.Account" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="HistoryDay" EntityType="Self.HistoryDay" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="HistoryWord" EntityType="Self.HistoryWord" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Word" EntityType="Self.Word" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="WordEffect" EntityType="Self.WordEffect" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

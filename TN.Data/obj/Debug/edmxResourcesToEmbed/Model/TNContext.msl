@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="EnglishModelStoreContainer" CdmEntityContainer="EnglishEntities">
+    <EntitySetMapping Name="Accounts">
+      <EntityTypeMapping TypeName="EnglishModel.Account">
+        <MappingFragment StoreEntitySet="Account">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Mark" ColumnName="Mark" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HistoryWords">
+      <EntityTypeMapping TypeName="EnglishModel.HistoryWord">
+        <MappingFragment StoreEntitySet="HistoryWord">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="IdWord" ColumnName="IdWord" />
+          <ScalarProperty Name="IdAccount" ColumnName="IdAccount" />
+          <ScalarProperty Name="Day" ColumnName="Day" />
+          <ScalarProperty Name="Time" ColumnName="Time" />
+          <ScalarProperty Name="Remember" ColumnName="Remember" />
+          <ScalarProperty Name="Learned" ColumnName="Learned" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Words">
+      <EntityTypeMapping TypeName="EnglishModel.Word">
+        <MappingFragment StoreEntitySet="Word">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Word1" ColumnName="Word" />
+          <ScalarProperty Name="WordRemember" ColumnName="WordRemember" />
+          <ScalarProperty Name="Mean" ColumnName="Mean" />
+          <ScalarProperty Name="Audio" ColumnName="Audio" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WordEffects">
+      <EntityTypeMapping TypeName="EnglishModel.WordEffect">
+        <MappingFragment StoreEntitySet="WordEffect">
+          <ScalarProperty Name="IdAccountUser" ColumnName="IdAccountUser" />
+          <ScalarProperty Name="IdWord" ColumnName="IdWord" />
+          <ScalarProperty Name="Point" ColumnName="Point" />
+          <ScalarProperty Name="Review" ColumnName="Review" />
+          <ScalarProperty Name="DateMilli" ColumnName="DateMilli" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="learnNew" FunctionName="EnglishModel.Store.learnNew">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="EnglishModel.learnNew_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Word" ColumnName="Word" />
+          <ScalarProperty Name="WordRemember" ColumnName="WordRemember" />
+          <ScalarProperty Name="Mean" ColumnName="Mean" />
+          <ScalarProperty Name="Audio" ColumnName="Audio" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

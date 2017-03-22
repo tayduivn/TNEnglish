@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="EnglishModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Account">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FullName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Phone" Type="String" MaxLength="11" FixedLength="false" Unicode="false" />
+    <Property Name="Username" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Mark" Type="Int32" />
+    <Property Name="Status" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="HistoryWord">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IdWord" Type="Int32" />
+    <Property Name="IdAccount" Type="Int32" />
+    <Property Name="Day" Type="DateTime" Precision="3" />
+    <Property Name="Time" Type="Int32" />
+    <Property Name="Remember" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Learned" Type="Boolean" />
+    <Property Name="Status" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="Word">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="Word1" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Word1" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="WordRemember" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="Mean" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Audio" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Image" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Category" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Status" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="WordEffect">
+    <Key>
+      <PropertyRef Name="IdAccountUser" />
+      <PropertyRef Name="IdWord" />
+    </Key>
+    <Property Name="IdAccountUser" Type="Int32" Nullable="false" />
+    <Property Name="IdWord" Type="Int32" Nullable="false" />
+    <Property Name="Point" Type="Int32" />
+    <Property Name="Review" Type="Int32" />
+    <Property Name="DateMilli" Type="DateTime" Precision="3" />
+    <Property Name="Status" Type="Boolean" />
+  </EntityType>
+  <EntityContainer Name="EnglishEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Accounts" EntityType="Self.Account" />
+    <EntitySet Name="HistoryWords" EntityType="Self.HistoryWord" />
+    <EntitySet Name="Words" EntityType="Self.Word" />
+    <EntitySet Name="WordEffects" EntityType="Self.WordEffect" />
+    <FunctionImport Name="learnNew" ReturnType="Collection(EnglishModel.learnNew_Result)">
+      <Parameter Name="id" Mode="In" Type="Int32" />
+    </FunctionImport>
+  </EntityContainer>
+  <ComplexType Name="learnNew_Result">
+    <Property Type="Int32" Name="Id" Nullable="false" />
+    <Property Type="String" Name="Word" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="WordRemember" Nullable="true" MaxLength="150" />
+    <Property Type="String" Name="Mean" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="Audio" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Image" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Category" Nullable="true" MaxLength="10" />
+    <Property Type="Boolean" Name="Status" Nullable="true" />
+  </ComplexType>
+</Schema>

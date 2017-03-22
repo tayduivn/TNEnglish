@@ -1,0 +1,14 @@
+D:\Tien Nguyen\Project\TNEnglish\TN.Core\bin\Debug\TN.Core.dll.config
+D:\Tien Nguyen\Project\TNEnglish\TN.Core\bin\Debug\TN.Core.dll
+D:\Tien Nguyen\Project\TNEnglish\TN.Core\bin\Debug\TN.Core.pdb
+D:\Tien Nguyen\Project\TNEnglish\TN.Core\bin\Debug\EntityFramework.dll
+D:\Tien Nguyen\Project\TNEnglish\TN.Core\bin\Debug\EntityFramework.SqlServer.dll
+D:\Tien Nguyen\Project\TNEnglish\TN.Core\bin\Debug\TN.Data.dll
+D:\Tien Nguyen\Project\TNEnglish\TN.Core\bin\Debug\TN.Data.pdb
+D:\Tien Nguyen\Project\TNEnglish\TN.Core\bin\Debug\EntityFramework.xml
+D:\Tien Nguyen\Project\TNEnglish\TN.Core\bin\Debug\EntityFramework.SqlServer.xml
+D:\Tien Nguyen\Project\TNEnglish\TN.Core\obj\Debug\TN.Core.csprojResolveAssemblyReference.cache
+D:\Tien Nguyen\Project\TNEnglish\TN.Core\obj\Debug\TN.Core.dll
+D:\Tien Nguyen\Project\TNEnglish\TN.Core\obj\Debug\TN.Core.pdb
+D:\Tien Nguyen\Project\TNEnglish\TN.Core\bin\Debug\Newtonsoft.Json.dll
+D:\Tien Nguyen\Project\TNEnglish\TN.Core\bin\Debug\Newtonsoft.Json.xml
