@@ -16,3 +16,21 @@ D:\Tien Nguyen\Project\TNEnglish\Update Word\obj\Debug\Update_Word.Properties.Re
 D:\Tien Nguyen\Project\TNEnglish\Update Word\obj\Debug\Update Word.csproj.GenerateResource.Cache
 D:\Tien Nguyen\Project\TNEnglish\Update Word\obj\Debug\Update Word.exe
 D:\Tien Nguyen\Project\TNEnglish\Update Word\obj\Debug\Update Word.pdb
+C:\Users\x04z\Source\Repos\TNEnglish\Update Word\bin\Debug\Update Word.exe.config
+C:\Users\x04z\Source\Repos\TNEnglish\Update Word\bin\Debug\Update Word.exe
+C:\Users\x04z\Source\Repos\TNEnglish\Update Word\bin\Debug\Update Word.pdb
+C:\Users\x04z\Source\Repos\TNEnglish\Update Word\bin\Debug\TN.Data.dll
+C:\Users\x04z\Source\Repos\TNEnglish\Update Word\bin\Debug\EntityFramework.dll
+C:\Users\x04z\Source\Repos\TNEnglish\Update Word\bin\Debug\TN.Data.pdb
+C:\Users\x04z\Source\Repos\TNEnglish\Update Word\bin\Debug\EntityFramework.xml
+C:\Users\x04z\Source\Repos\TNEnglish\Update Word\bin\Debug\Interop.WMPLib.dll
+C:\Users\x04z\Source\Repos\TNEnglish\Update Word\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\x04z\Source\Repos\TNEnglish\Update Word\obj\Debug\Update Word.csprojResolveAssemblyReference.cache
+C:\Users\x04z\Source\Repos\TNEnglish\Update Word\obj\Debug\Interop.WMPLib.dll
+C:\Users\x04z\Source\Repos\TNEnglish\Update Word\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\x04z\Source\Repos\TNEnglish\Update Word\obj\Debug\Update Word.csproj.ResolveComReference.cache
+C:\Users\x04z\Source\Repos\TNEnglish\Update Word\obj\Debug\Update_Word.Form1.resources
+C:\Users\x04z\Source\Repos\TNEnglish\Update Word\obj\Debug\Update_Word.Properties.Resources.resources
+C:\Users\x04z\Source\Repos\TNEnglish\Update Word\obj\Debug\Update Word.csproj.GenerateResource.Cache
+C:\Users\x04z\Source\Repos\TNEnglish\Update Word\obj\Debug\Update Word.exe
+C:\Users\x04z\Source\Repos\TNEnglish\Update Word\obj\Debug\Update Word.pdb

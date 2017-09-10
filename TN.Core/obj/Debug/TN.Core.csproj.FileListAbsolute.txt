@@ -12,3 +12,17 @@ D:\Tien Nguyen\Project\TNEnglish\TN.Core\obj\Debug\TN.Core.dll
 D:\Tien Nguyen\Project\TNEnglish\TN.Core\obj\Debug\TN.Core.pdb
 D:\Tien Nguyen\Project\TNEnglish\TN.Core\bin\Debug\Newtonsoft.Json.dll
 D:\Tien Nguyen\Project\TNEnglish\TN.Core\bin\Debug\Newtonsoft.Json.xml
+C:\Users\x04z\Source\Repos\TNEnglish\TN.Core\bin\Debug\TN.Core.dll.config
+C:\Users\x04z\Source\Repos\TNEnglish\TN.Core\bin\Debug\TN.Core.dll
+C:\Users\x04z\Source\Repos\TNEnglish\TN.Core\bin\Debug\TN.Core.pdb
+C:\Users\x04z\Source\Repos\TNEnglish\TN.Core\bin\Debug\EntityFramework.dll
+C:\Users\x04z\Source\Repos\TNEnglish\TN.Core\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\x04z\Source\Repos\TNEnglish\TN.Core\bin\Debug\Newtonsoft.Json.dll
+C:\Users\x04z\Source\Repos\TNEnglish\TN.Core\bin\Debug\TN.Data.dll
+C:\Users\x04z\Source\Repos\TNEnglish\TN.Core\bin\Debug\TN.Data.pdb
+C:\Users\x04z\Source\Repos\TNEnglish\TN.Core\bin\Debug\EntityFramework.xml
+C:\Users\x04z\Source\Repos\TNEnglish\TN.Core\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\x04z\Source\Repos\TNEnglish\TN.Core\bin\Debug\Newtonsoft.Json.xml
+C:\Users\x04z\Source\Repos\TNEnglish\TN.Core\obj\Debug\TN.Core.csprojResolveAssemblyReference.cache
+C:\Users\x04z\Source\Repos\TNEnglish\TN.Core\obj\Debug\TN.Core.dll
+C:\Users\x04z\Source\Repos\TNEnglish\TN.Core\obj\Debug\TN.Core.pdb

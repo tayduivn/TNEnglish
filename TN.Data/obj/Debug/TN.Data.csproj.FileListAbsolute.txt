@@ -18,3 +18,13 @@ D:\Tien Nguyen\Project\TNEnglish\TN.Data\bin\Debug\EntityFramework.SqlServer.xml
 D:\Tien Nguyen\Project\TNEnglish\TN.Data\obj\Debug\TN.Data.dll
 D:\Tien Nguyen\Project\TNEnglish\TN.Data\obj\Debug\TN.Data.pdb
 D:\Tien Nguyen\Project\TNEnglish\TN.Data\obj\Debug\TN.Data.csprojResolveAssemblyReference.cache
+C:\Users\x04z\Source\Repos\TNEnglish\TN.Data\bin\Debug\TN.Data.dll.config
+C:\Users\x04z\Source\Repos\TNEnglish\TN.Data\bin\Debug\TN.Data.dll
+C:\Users\x04z\Source\Repos\TNEnglish\TN.Data\bin\Debug\TN.Data.pdb
+C:\Users\x04z\Source\Repos\TNEnglish\TN.Data\bin\Debug\EntityFramework.dll
+C:\Users\x04z\Source\Repos\TNEnglish\TN.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\x04z\Source\Repos\TNEnglish\TN.Data\bin\Debug\EntityFramework.xml
+C:\Users\x04z\Source\Repos\TNEnglish\TN.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\x04z\Source\Repos\TNEnglish\TN.Data\obj\Debug\TN.Data.csprojResolveAssemblyReference.cache
+C:\Users\x04z\Source\Repos\TNEnglish\TN.Data\obj\Debug\TN.Data.dll
+C:\Users\x04z\Source\Repos\TNEnglish\TN.Data\obj\Debug\TN.Data.pdb

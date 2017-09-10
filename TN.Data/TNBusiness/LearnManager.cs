@@ -1,14 +1,11 @@
 ﻿using System;
-using System.CodeDom;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using TN.Data.Model;
 
 namespace TN.Data.TNBusiness
 {
-    public class LearnManager: ILearn
+    public class LearnManager : ILearn
     {
         public IList<WordEffect> GetReview(int id)
         {
@@ -16,7 +13,9 @@ namespace TN.Data.TNBusiness
             {
                 using (var db = new EnglishEntities())
                 {
-                    var query = db.WordEffects.Where(x => x.IdAccountUser == id && x.Review < 9 && x.DateMilli <= DateTime.Now && x.Status == true).OrderBy(e => e.Point).Take(20).ToList();
+                    var query = db.WordEffects
+                        .Where(x => x.IdAccountUser == id && x.Review < 9 && x.DateMilli <= DateTime.Now &&
+                                    x.Status == true).OrderBy(e => e.Point).Take(20).ToList();
                     return query;
                 }
             }
@@ -33,12 +32,11 @@ namespace TN.Data.TNBusiness
                 using (var db = new EnglishEntities())
                 {
                     var query = db.learnNew(id).ToList();
-                     return query;
+                    return query;
                 }
             }
             catch (Exception)
             {
-
                 return null;
             }
         }
@@ -62,33 +60,32 @@ namespace TN.Data.TNBusiness
 
         public bool SavePoint(WordEffect e)
         {
-            
-                try
+            try
+            {
+                using (var db = new EnglishEntities())
                 {
-                    using (var db = new EnglishEntities())
+                    var query = db.WordEffects.FirstOrDefault(
+                        x => x.IdWord == e.IdWord && x.IdAccountUser == e.IdAccountUser);
+                    if (query != null)
                     {
-                        var query = db.WordEffects.FirstOrDefault(x => x.IdWord == e.IdWord && x.IdAccountUser == e.IdAccountUser);
-                        if (query != null)
-                        {
-                            query.Point = e.Point;
-                            query.Review = e.Review;
-                            query.Status = e.Status;
-                            query.DateMilli = e.DateMilli;
-                            query.IdWord = e.IdWord;
-                        }
-                        else
-                        {
-                            query = db.WordEffects.Add(e);
-                        }
-                      
-                        return db.SaveChanges() > 0;
+                        query.Point = e.Point;
+                        query.Review = e.Review;
+                        query.Status = e.Status;
+                        query.DateMilli = e.DateMilli;
+                        query.IdWord = e.IdWord;
                     }
+                    else
+                    {
+                        query = db.WordEffects.Add(e);
+                    }
+
+                    return db.SaveChanges() > 0;
                 }
-                catch (Exception)
-                {
-                    return false;
-                }
-            
+            }
+            catch (Exception)
+            {
+                return false;
+            }
         }
 
         public bool UpdateWord(Word w)
@@ -102,13 +99,11 @@ namespace TN.Data.TNBusiness
                     query.WordRemember = w.WordRemember;
                     query.Mean = w.Mean;
                     query.Status = w.Status;
-                    return db.SaveChanges() >0;
-                   
+                    return db.SaveChanges() > 0;
                 }
             }
             catch (Exception)
             {
-
                 return false;
             }
         }
@@ -120,7 +115,7 @@ namespace TN.Data.TNBusiness
                 using (var db = new EnglishEntities())
                 {
                     var query = db.HistoryWords.Add(h);
-                    return db.SaveChanges() >0;
+                    return db.SaveChanges() > 0;
                 }
             }
             catch (Exception)
@@ -141,7 +136,6 @@ namespace TN.Data.TNBusiness
             }
             catch (Exception)
             {
-
                 return null;
             }
         }
