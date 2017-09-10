@@ -60,7 +60,7 @@ namespace TNEnglish
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Login();
+            Login(); //Dday laf hamf  Login
         }
 
         private void Login()

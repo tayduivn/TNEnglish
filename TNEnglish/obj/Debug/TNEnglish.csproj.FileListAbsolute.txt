@@ -37,3 +37,9 @@ D:\Tien Nguyen\Project\TNEnglish\TNEnglish\obj\Debug\AxInterop.WMPLib.dll
 D:\Tien Nguyen\Project\TNEnglish\TNEnglish\obj\Debug\TNEnglish.csproj.ResolveComReference.cache
 D:\Tien Nguyen\Project\TNEnglish\TNEnglish\bin\Debug\Newtonsoft.Json.dll
 D:\Tien Nguyen\Project\TNEnglish\TNEnglish\bin\Debug\Newtonsoft.Json.xml
+C:\Users\x04z\Source\Repos\TNEnglish\TNEnglish\bin\Debug\TNEnglish.exe.config
+C:\Users\x04z\Source\Repos\TNEnglish\TNEnglish\obj\Debug\Interop.WMPLib.dll
+C:\Users\x04z\Source\Repos\TNEnglish\TNEnglish\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\x04z\Source\Repos\TNEnglish\TNEnglish\obj\Debug\TNEnglish.csproj.ResolveComReference.cache
+C:\Users\x04z\Source\Repos\TNEnglish\TNEnglish\obj\Debug\TNEnglish.exe
+C:\Users\x04z\Source\Repos\TNEnglish\TNEnglish\obj\Debug\TNEnglish.pdb
